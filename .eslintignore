@@ -1,0 +1,9 @@
+node_modules
+.next
+.env
+build/
+dist/
+coverage/
+logs/
+*.min.js
+public/

@@ -1,0 +1,44 @@
+{
+  "name": "dfy-graviti-assignment",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "format:check": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix --format json",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "yarn lint:fix",
+      "yarn format:fix",
+      "git add ."
+    ]
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "next": "14.2.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "commitlint": "^19.3.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
+    "postcss": "^8.4.38",
+    "prettier": "^3.3.2",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5"
+  }
+}
